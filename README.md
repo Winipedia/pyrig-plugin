@@ -42,6 +42,6 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin for pyrig plugins.
 
 ---

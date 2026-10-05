@@ -4,7 +4,7 @@
   },
   "repository": {
     "name": "pyrig-plugin",
-    "description": "Add your description here",
+    "description": "A pyrig plugin for pyrig plugins.",
     "homepage": "https://Winipedia.github.io/pyrig-plugin",
     "default_branch": "main",
     "delete_branch_on_merge": true,
