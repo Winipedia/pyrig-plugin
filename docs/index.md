@@ -45,3 +45,34 @@
 > A pyrig plugin for pyrig plugins.
 
 ---
+
+## Overview
+
+Drop-in [pyrig](https://github.com/Winipedia/pyrig) plugin for projects that
+are themselves pyrig plugins. Pyrig discovers plugin implementations in installed
+packages that declare pyrig as a dependency. This plugin ensures the plugin
+project has that runtime dependency, while this plugin itself is installed as
+a development dependency.
+
+## Installation
+
+```bash
+uv add pyrig-plugin --dev
+uv run pyrig sync
+```
+
+## How it works
+
+The plugin subclasses pyrig's `Pyrigger` and extends its runtime dependency
+list with `pyrig`. When `pyrig sync` is invoked, the project's `pyproject.toml`
+adds any missing runtime dependencies from that list. The inherited
+`pyrig-runtime` dependency is preserved.
+
+It also adds pyrig as an ignore entry to the `deptry` tool entry in the `pyproject.toml`.
+This also happens automatically when `pyrig sync` is run.
+This is needed so `deptry` does not mistakenly report `pyrig` as an unused dependency.
+
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.

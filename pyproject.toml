@@ -26,6 +26,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
+  "pyrig>=18.97.3",
   "pyrig-runtime>=3.24.12",
 ]
 
@@ -78,6 +79,7 @@ root = "src"
 
 [tool.deptry.per_rule_ignores]
 DEP002 = [
+  "pyrig",
   "pyrig-runtime",
 ]
 

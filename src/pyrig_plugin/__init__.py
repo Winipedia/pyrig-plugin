@@ -1,1 +1,1 @@
-"""The top-level package for the project."""
+"""A Pyrig plugin for projects that create Pyrig plugins."""

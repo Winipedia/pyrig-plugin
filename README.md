@@ -45,3 +45,27 @@
 > A pyrig plugin for pyrig plugins.
 
 ---
+
+## Overview
+
+`pyrig-plugin` is a [pyrig](https://github.com/Winipedia/pyrig) plugin for
+projects that are themselves pyrig plugins. Pyrig discovers plugin implementations
+across installed packages through their declared dependencies, so a package
+that extends pyrig must declare pyrig as a runtime dependency.
+
+## What it adds
+
+- **pyrig runtime dependency** — `pyrig sync` adds `pyrig` alongside
+  `pyrig-runtime` to the plugin project's runtime dependencies.
+
+## Usage
+
+```bash
+uv add pyrig-plugin --dev
+uv run pyrig sync
+```
+
+## Documentation
+
+Full documentation, including the auto-generated API reference, is available on
+the [documentation site](https://Winipedia.github.io/pyrig-plugin).
