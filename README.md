@@ -55,8 +55,8 @@ that extends pyrig must declare pyrig as a runtime dependency.
 
 ## What it adds
 
-- **pyrig runtime dependency** — `pyrig sync` adds `pyrig` alongside
-  `pyrig-runtime` to the plugin project's runtime dependencies.
+- **pyrig runtime dependency** — It declares `pyrig` as a runtime dependency for
+the plugin project.
 
 ## Usage
 

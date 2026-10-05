@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-plugin"
-version = "0.1.0"
+version = "0.2.5"
 description = "A pyrig plugin for pyrig plugins."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,6 @@ classifiers = [
 ]
 dependencies = [
   "pyrig>=18.97.3",
-  "pyrig-runtime>=3.24.12",
 ]
 
 [project.urls]
@@ -80,7 +79,6 @@ root = "src"
 [tool.deptry.per_rule_ignores]
 DEP002 = [
   "pyrig",
-  "pyrig-runtime",
 ]
 
 [tool.pytest]
