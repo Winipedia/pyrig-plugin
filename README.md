@@ -57,6 +57,12 @@ that extends pyrig must declare pyrig as a runtime dependency.
 
 - **pyrig runtime dependency** — It declares `pyrig` as a runtime dependency for
 the plugin project.
+- **deptry configuration** — It ignores `pyrig` in deptry so the runtime
+  dependency is not reported as unused.
+- **PyPI integration** — It depends on [`pyrig-pypi`](https://Winipedia.github.io/pyrig-pypi),
+  so installing `pyrig-plugin` also installs that plugin.
+- **pyrig project keyword** — It adds `pyrig` to the project keywords written
+  to `pyproject.toml`.
 
 ## Usage
 

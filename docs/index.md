@@ -53,6 +53,8 @@ are themselves pyrig plugins. Pyrig discovers plugin implementations in installe
 packages that declare pyrig as a dependency. This plugin ensures the plugin
 project has that required runtime dependency, while this plugin itself is
 installed as a development dependency.
+It depends on [`pyrig-pypi`](https://Winipedia.github.io/pyrig-pypi), so
+installing `pyrig-plugin` also installs that plugin.
 
 ## Installation
 
@@ -67,6 +69,8 @@ The plugin subclasses pyrig's `Pyrigger` and sets `pyrig` as the project's
 runtime dependency. When `pyrig sync` is invoked, the project's `pyproject.toml`
 declares `pyrig` instead of `pyrig-runtime`. Since `pyrig` itself depends on
 `pyrig-runtime`, plugin projects only need to declare `pyrig`.
+When managing `pyproject.toml`, the plugin also adds `pyrig` to the project
+keywords.
 
 It also adds pyrig as an ignore entry to the `deptry` tool entry in the `pyproject.toml`.
 This also happens automatically when `pyrig sync` is run.
