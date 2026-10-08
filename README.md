@@ -53,11 +53,16 @@
 projects that are themselves pyrig plugins. Pyrig discovers plugin implementations
 across installed packages through their declared dependencies, so a package
 that extends pyrig must declare pyrig as a runtime dependency.
+It also includes [`pyrig-fixtures`](https://Winipedia.github.io/pyrig-fixtures),
+providing reusable pytest fixtures to plugin projects.
 
 ## What it adds
 
 - **pyrig runtime dependency** — It declares `pyrig` as a runtime dependency for
 the plugin project.
+- **Shared pytest fixtures** — It depends on
+  [`pyrig-fixtures`](https://Winipedia.github.io/pyrig-fixtures), making its
+  reusable pytest fixtures available to plugin projects.
 - **deptry configuration** — It ignores `pyrig` in deptry so the runtime
   dependency is not reported as unused.
 - **PyPI integration** — It depends on [`pyrig-pypi`](https://Winipedia.github.io/pyrig-pypi),

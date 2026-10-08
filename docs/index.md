@@ -73,6 +73,10 @@ declares `pyrig` instead of `pyrig-runtime`. Since `pyrig` itself depends on
 When managing `pyproject.toml`, the plugin also adds `pyrig` to the project
 keywords.
 
+The plugin also depends on
+[`pyrig-fixtures`](https://Winipedia.github.io/pyrig-fixtures), making its
+reusable pytest fixtures available to plugin projects.
+
 It also adds pyrig as an ignore entry to the `deptry` tool entry in the `pyproject.toml`.
 This also happens automatically when `pyrig sync` is run.
 This is needed so `deptry` does not mistakenly report `pyrig` as an unused dependency.
