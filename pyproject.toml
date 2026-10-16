@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-plugin"
-version = "1.1.17"
+version = "1.1.18"
 description = "A pyrig plugin for pyrig plugins."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -123,7 +123,7 @@ select = [
 [tool.ruff.lint.pydocstyle]
 convention = "google"
 
-[tool.ryl.rules]
+[tool.ryl.lint.rules]
 ALL = "enable"
 key-ordering = "disable"
 
