@@ -1,11 +1,14 @@
 """Pyrigger override that declares pyrig as a runtime dependency."""
 
+from typing import override
+
 from pyrig.rig.tools.pyrigger import Pyrigger as BasePyrigger
 
 
 class Pyrigger(BasePyrigger):
     """Extend Pyrig's CLI wrapper for projects that are themselves Pyrig plugins."""
 
+    @override
     def runtime_dependency(self) -> str:
         """Return pyrig as the runtime dependency.
 

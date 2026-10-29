@@ -1,5 +1,7 @@
 """PyPI-specific extensions to the project's `pyproject.toml` configuration."""
 
+from typing import override
+
 from pyrig.rig.tools.pyrigger import Pyrigger
 from pyrig_pypi.rig.configs.pyproject import (
     PyprojectConfigFile as BasePyprojectConfigFile,
@@ -9,6 +11,7 @@ from pyrig_pypi.rig.configs.pyproject import (
 class PyprojectConfigFile(BasePyprojectConfigFile):
     """Customized PyprojectConfigFile for pyrig plugins."""
 
+    @override
     def keywords_configs(self) -> list[str]:
         """Return the list of keyword configurations.
 
