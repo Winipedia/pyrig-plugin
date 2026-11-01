@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-plugin"
-version = "1.2.34"
+version = "1.2.35"
 description = "A pyrig plugin for pyrig plugins."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -130,6 +130,7 @@ strict = true
 [tool.ryl.lint.rules]
 ALL = "enable"
 key-ordering = "disable"
+yaml-directive = "disable"
 
 [tool.vulture]
 paths = [
