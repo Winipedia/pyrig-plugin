@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-plugin"
-version = "1.2.74"
+version = "1.2.75"
 description = "A pyrig plugin for pyrig plugins."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pyrig>=19.2.0",
+  "pyrig>=19.29.0",
   "pyrig-fixtures>=2.27.0",
   "pyrig-pypi>=3.22.0",
 ]
