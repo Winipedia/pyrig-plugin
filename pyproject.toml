@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-plugin"
-version = "1.2.93"
+version = "1.2.99"
 description = "A pyrig plugin for pyrig plugins."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -133,6 +133,9 @@ strict = true
 ALL = "enable"
 key-ordering = "disable"
 yaml-directive = "disable"
+
+[tool.ty.rules]
+all = "error"
 
 [tool.typos.default]
 extend-ignore-re = [
